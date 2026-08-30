@@ -9,7 +9,19 @@
 
     <body
         style="display: flex; width: 100vw; height: 100vh; align-items: center; justify-content: center; background: black;">
-        <span style="display: flex; color: white; font-family: Arial, Helvetica, sans-serif;">👋 Hi Hannah</span>
+        <span style="display: flex; color: white; font-family: Arial, Helvetica, sans-serif;" id="hannah">👋 Hi
+            Hannah</span>
     </body>
+
+
+    <script>
+        const k = document.getElementById('hannah')
+        const rot = 0
+
+        while (true) {
+            rot += 1
+            k.style.transform = `rotate(${rot})`
+        }
+    </script>
 
 </html>
